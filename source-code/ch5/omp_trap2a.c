@@ -27,6 +27,9 @@ double f(double x);    /* Function we're integrating */
 double Local_trap(double a, double b, int n);
 
 int main(int argc, char* argv[]) {
+   double start_time, end_time;
+
+
    double  global_result;        /* Store result in global_result */
    double  a, b;                 /* Left and right endpoints      */
    int     n;                    /* Total number of trapezoids    */
@@ -36,6 +39,8 @@ int main(int argc, char* argv[]) {
    thread_count = strtol(argv[1], NULL, 10);
    printf("Enter a, b, and n\n");
    scanf("%lf %lf %d", &a, &b, &n);
+
+   start_time = omp_get_wtime();  /* Gets Start Time*/
    if (n % thread_count != 0) Usage(argv[0]);
 
    global_result = 0.0;
@@ -50,6 +55,10 @@ int main(int argc, char* argv[]) {
    printf("With n = %d trapezoids, our estimate\n", n);
    printf("of the integral from %f to %f = %.14e\n",
       a, b, global_result);
+   
+   end_time = omp_get_wtime();    /* Gets End Time*/
+   printf("Time Taken: %f seconds\n", end_time - start_time);
+   
    return 0;
 }  /* main */
 

@@ -1,0 +1,203 @@
+Script started on 2023-09-27 18:20:16+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="162" LINES="69"]
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ gc[K[Kgcc -g[K[K[K[K[K[Kgcc -g -Wall -fopenmp -o omp_trap2a omp_trap2a.c[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgcc -g -Wall -fopenmp -o omp_trap1 omp_trap1.c
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap1 a[K1
+Enter a, b, and n
+0 1 1000000
+With n = 1000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333500e-01
+Time Taken: 0.004005 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap1 1[K1
+Enter a, b, and n
+0 1 100000000
+With n = 100000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333223e-01
+Time Taken: 0.392674 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap1 1[K2
+Enter a, b, and n
+0 1 1000000
+With n = 1000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333496e-01
+Time Taken: 0.003511 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap1 2
+Enter a, b, and n
+0 1 100000000
+With n = 100000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333255e-01
+Time Taken: 0.340324 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap1 2[K4
+Enter a, b, and n
+^[[A^[[B        0 1 1000000
+With n = 1000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333497e-01
+Time Taken: 0.003921 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap1 4
+Enter a, b, and n
+0 1 100000000
+With n = 100000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333338e-01
+Time Taken: 0.389170 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap1 4[K8
+Enter a, b, and n
+0 1 1000000
+With n = 1000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333501e-01
+Time Taken: 0.003738 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap1 8
+Enter a, b, and n
+0 1 100000000
+With n = 100000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333350e-01
+Time Taken: 0.312534 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ gcc -g -Wall -fopenmp -o omp_trap2a omp_trap2a.c
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap2a 1
+Enter a, b, and n
+0 1 1000000
+With n = 1000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333500e-01
+Time Taken: 0.004946 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap2a 1
+Enter a, b, and n
+0 1 100000000
+With n = 100000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333223e-01
+Time Taken: 0.375810 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap2a 1[K2
+Enter a, b, and n
+0 1 1000000
+With n = 1000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333496e-01
+Time Taken: 0.003496 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap2a 2
+Enter a, b, and n
+0 1 100000000
+With n = 100000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333255e-01
+Time Taken: 0.305439 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap2a 2[K4
+Enter a, b, and n
+0 1 1000000
+With n = 1000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333497e-01
+Time Taken: 0.003482 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap2a 4
+Enter a, b, and n
+0 1 100000000
+With n = 100000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333338e-01
+Time Taken: 0.353337 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap2a 4[K8
+Enter a, b, and n
+0 1 1000000
+With n = 1000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333501e-01
+Time Taken: 0.003602 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap2a 8
+Enter a, b, and n
+0 1 100000000
+With n = 100000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333350e-01
+Time Taken: 0.306991 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ gcc -g -Wall -fopenmp -o omp_trap2b omp_trap2b.c
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap2b 1
+Enter a, b, and n
+0 1 1000000
+With n = 1000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333500e-01
+Time Taken: 0.004493 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap2b 1
+Enter a, b, and n
+0 1 100000000
+With n = 100000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333223e-01
+Time Taken: 0.381111 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap2b 1[K2
+Enter a, b, and n
+0 1 1000000
+With n = 1000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333496e-01
+Time Taken: 0.003673 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap2b 2
+Enter a, b, and n
+0 1 100000000
+With n = 100000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333255e-01
+Time Taken: 0.338892 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap2b 2[K4
+Enter a, b, and n
+0 1 1000000
+With n = 1000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333497e-01
+Time Taken: 0.003807 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap2b 4
+Enter a, b, and n
+0 1 100000000
+With n = 100000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333338e-01
+Time Taken: 0.311833 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap2b 4[K8
+Enter a, b, and n
+0 1 1000000
+With n = 1000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333501e-01
+Time Taken: 0.003616 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap2b 8[K8
+Enter a, b, and n
+0 1 100000000
+With n = 100000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333350e-01
+Time Taken: 0.307824 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ gcc -g -Wall -fopenmp -o omp_trap3 omp_trap3.c
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap3
+usage: ./omp_trap3 <number of threads>
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ 0[K./omp_trap3 1
+Enter a, b, and n
+0 1 1000000
+With n = 1000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333500e-01
+Time Taken: 0.003946 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap3 1
+Enter a, b, and n
+0 1 100000000
+With n = 100000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333223e-01
+Time Taken: 0.411001 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap3 1[K2
+Enter a, b, and n
+0 1 1000000
+With n = 1000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333496e-01
+Time Taken: 0.003087 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap3 2
+Enter a, b, and n
+0 1 100000000
+With n = 100000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333255e-01
+Time Taken: 0.254454 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap3 2[K4
+Enter a, b, and n
+0 1 1000000
+With n = 1000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333497e-01
+Time Taken: 0.002953 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap3 4
+Enter a, b, and n
+0 1 100000000
+With n = 100000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333338e-01
+Time Taken: 0.263633 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap3 4[K8
+Enter a, b, and n
+0 1 1000000
+With n = 1000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333501e-01
+Time Taken: 0.003227 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ ./omp_trap3 8
+Enter a, b, and n
+0 1 100000000
+With n = 100000000 trapezoids, our estimate
+of the integral from 0.000000 to 1.000000 = 3.33333333333350e-01
+Time Taken: 0.269484 seconds
+[0;32m@SteamingPilot [0m➜ [1;34m/workspaces/cs5260/source-code/ch5 [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2023-09-27 18:26:57+00:00 [COMMAND_EXIT_CODE="0"]
