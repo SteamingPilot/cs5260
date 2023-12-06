@@ -113,28 +113,35 @@ class Sudoku:
             for i in range(self.N):
                 for j in range(self.N):
                         file.write(str(self.mat[i][j]) + "\n")
-                print()
 
 # Driver code
 if __name__ == "__main__":
-    N = [9, 16]
-    K = [25, 90]
+    n = int(input("Enter the size of the board: "))
+    k = int(input("Enter the number of empty cells: "))
 
-    for i in range(len(N)):
-        n = N[i]
-        k = K[i]
-        file_val = 1
-        for j in range(5):
-            file = f"./boards/{n}x{n} Puzzle {file_val}.txt"
-            while os.path.exists(file): 
-                file_val += 1
-                file = f"{n}x{n} Puzzle {file_val}.txt"
+    if k>n*n:
+        print("Invalid input")
+        exit()
 
-            sudoku = Sudoku(n, k)
-            sudoku.fillValues()
-            sudoku.putInFile(file)
+    board_num = int(input("Enter the number of boards to be generated: "))
+    difficulty = input("Enter the difficulty level (easy, med, hard): ")
 
-            
+
+    count = 1
+    fn = f"./boards/{n}-{difficulty}-{count}.txt"
+    while os.path.exists(fn):
+        count += 1
+        fn = "./boards/" + str(n) + str(count) + ".txt"
+
+    while board_num > 0:
+        # Sudoku(SIZE, EMPTY_CELL_COUNT)
+        sudoku = Sudoku(n, k)
+        sudoku.fillValues()
+        sudoku.putInFile(fn)
+        count+=1
+        fn = f"./boards/{n}-{difficulty}-{count}.txt"
+
+        board_num -= 1
 
 
 

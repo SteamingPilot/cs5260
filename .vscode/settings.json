@@ -1,5 +1,12 @@
 {
     "files.associations": {
         "omp.h": "c"
-    }
+    },
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<esc>"]
+        }
+    ],
+    
 }

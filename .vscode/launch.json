@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/project/solver",
-            "args": ["9", "<", "${workspaceFolder}/project/boards/9x9-Puzzle-1.txt"],
+            "args": ["9", "64", "<", "${workspaceFolder}/project/boards/9-2.txt"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],

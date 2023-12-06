@@ -1,0 +1,6 @@
+!#/bin/bash
+./parallel-solver 9 16 < boards/9-hard-1.txt
+./parallel-solver 9 8 < boards/9-hard-1.txt
+./parallel-solver 9 4 < boards/9-hard-1.txt
+./parallel-solver 9 2 < boards/9-hard-1.txt
+./parallel-solver 9 1 < boards/9-hard-1.txt
